@@ -1,0 +1,107 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Microsoft YaHei}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+\setCJKmainfont{Microsoft YaHei}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                     % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{赵}
+\familyname{雪松}
+\title{个人简历}               % optional, remove the line if not wanted
+%\address{长春}{中国}    % optional, remove the line if not wanted
+\mobile{13029109128}                    % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{zxs867179@163.com}                     % optional, remove the line if not wanted
+\extrainfo{www.rego580.com} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{朝饮琼浆酒，夜登临江楼。未尝平生志，空白少年头。\\弹剑日月行，高歌大风秋。众生皆是误，入世便做囚。}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{个人基本信息}
+\subsection{Personal Info}
+\cvline{姓名}{\emph{赵雪松}}
+\cvline{E-NAME}{\emph{Elnder}}
+\cvline{联系地址}{吉林省长春市朝阳区卫星路7089号长春理工大学（东校区）}
+\section{校园经历}
+\subsection{Campus}
+\cvline{2011-今}{长春理工大学,本科，曾获二等奖学金一次，单项奖学金两次}
+\cvline{2013.8-2014.8}{长春理工大学计算机科学技术学院团委学生会新闻部部长}
+\cvline{2013.8-2014.8}{长春理工大学大学生科技协会网络部部长}
+\cvline{2012.5-今}{北极光IT技术联盟萌主}
+\cvline{2012.5-2013.8}{吉软国际J2EE培训}
+\section{专业技术}
+\subsection{Professional Skil}
+\cvline{JAVA}{擅长\emph{J2EE，SSH框架，Maven和Ant构建项目}，熟悉\emph{Eclipse / MyEclipse / IntelliJ IDEA}。参与过我校国防科技实验室的基础项目，参与测试bug。}
+\cvline{Go}{熟悉Go语言体系，通读过go1.2的代码和文档，熟悉协程开发，并行开发。熟悉beego框架体系，并利用此框架开发了我自己的个人门户网站\emph{www.rego580.com}}
+\cvline{前端}{熟悉\emph{HTML5+CSS3},熟悉\emph{jQuery,ExtJS4,YUI3}等JS框架，并涉猎\emph{Twitter Bootstrap 2／3 ， Semantic UI ， Foundation5}等诸多前端框架。担任长春蜗牛软件公司\emph{SalesForce}项目前端设计任务。}
+\cvline{Linux}{熟悉\emph{GNU/Linux}常见发行版的日常使用，维护及升级工作。熟悉\emph{Linux}工作环境，极度偏爱\emph{Emacs}。曾经独立在\emph{RedHat6.1}下安装成功\emph{Oracle 11g}并进行了日常的维护。熟悉\emph{Linux}常用服务器的搭建工作}
+\cvline{Android}{熟悉基本的\emph{Android}应用开发，开发过基本的\emph{Android}应用例子}
+\cvline{Hackintosh}{擅长黑苹果的安装，于本人个人PC上安装过Snow leopard与Mountain Lion，并按照\emph{紫米}的教程自己写了Snow Leopard的声音驱动程序，曾混迹于bbs.pcbeta.com}
+\cvline{其他}{\emph{熟悉\LaTeX{}基础用法，比如此篇简历};对NoSQL技术有所了解，对\emph{MongoDB}有粗浅的了解;了解基本的\emph{.NET}技术，熟悉\emph{Qt4.x}开发；涉猎\emph{NodeJS}技术,熟悉\emph{LESS}编译CSS有实际操作经验；对\emph{Subversion}和\emph{Git}版本控制技术比较熟悉；对\emph{Oracle PL/Sql}较为熟悉}
+\section{实习经历}
+\subsection{Internship}
+\cventry{2013.10-2014.7}{PG}{长春蜗牛软件公司}{长春}{}{担任蜗牛软件公司前端设计,SalesForce后台维护工作，参与实际项目}                % arguments 3 to 6 are optional
+\section{语言技能}
+\subsection{Language Skills}
+\cvlanguage{English}{Cet. 4}{Totally 445 point}
+\section{Interests}
+\cvline{足球}{\small 体力与技巧}
+\cvline{三国杀}{\small 脑力的博弈}
+\cvline{茶}{\small 修身养性}
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem[+]{Item 3}            % optional other symbol
+
+\section{Extra 2}
+\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\begin{thebibliography}{99}
+\bibitem{11} LaTeX入门与提高，高等教育出版社。
+\end{thebibliography}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
